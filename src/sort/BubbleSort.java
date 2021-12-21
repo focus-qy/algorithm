@@ -14,7 +14,7 @@ public class BubbleSort {
         for (int i = 1; i < array.length && flag; i++) {
             flag = false;
             for (int j = array.length - 1; j >= i; j--) {
-                if (array[j] > array[j - 1]) {//相邻元素
+                if (array[j] < array[j - 1]) {//相邻元素
                     swap(array, j, j - 1);
                     flag = true;
                 }
@@ -33,12 +33,5 @@ public class BubbleSort {
     }
 
 
-    public static void main(String[] args) {
-        int array[] = {1, 5, 8, 2, 3, 9, 7, 4, 6};
-        new BubbleSort().bubbleSort(array);
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
-        }
-    }
 
 }
