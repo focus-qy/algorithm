@@ -1,4 +1,5 @@
 import sort.BubbleSort;
+import sort.InsertSort;
 import sort.SelectSort;
 
 /**
@@ -7,14 +8,18 @@ import sort.SelectSort;
 public class Main {
 
     public static void main(String[] args) {
-        int array[] = {1, 5, 8, 2, 3, 9, 7, 4, 6};
+        int array[] = {1, 5, 2, 3, 7, 4, 6};
         new BubbleSort().bubbleSort(array);
         printArray(array, "BubbleSort:");
 
 
-        int array1[] = {1, 5, 8, 2, 3, 9, 7, 4, 6};
+        int array1[] = {1, 5, 8, 2, 3,9, 7, 4, 6};
         new SelectSort().selectSort(array1);
         printArray(array1, "SelectSort:");
+
+        int array2[] = {10,1, 5, 8, 2, 3, 9, 7, 4, 6};
+        new InsertSort().insertSort(array2);
+        printArray(array2, "InsertSort:");
 
 
     }
