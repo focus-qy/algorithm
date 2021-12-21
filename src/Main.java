@@ -1,6 +1,7 @@
 import sort.BubbleSort;
 import sort.InsertSort;
 import sort.SelectSort;
+import sort.ShellSort;
 
 /**
  * Created by QiYan on 2021/12/21.
@@ -20,6 +21,10 @@ public class Main {
         int array2[] = {10,1, 5, 8, 2, 3, 9, 7, 4, 6};
         new InsertSort().insertSort(array2);
         printArray(array2, "InsertSort:");
+
+        int array3[] = {10,1, 5, 8, 2, 3, 9, 7, 4, 6,11};
+        new ShellSort().shellSort(array3);
+        printArray(array3, "ShellSort:");
 
 
     }
