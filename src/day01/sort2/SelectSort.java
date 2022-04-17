@@ -1,4 +1,4 @@
-package sort;
+package day01.sort2;
 
 /**
  * Created by QiYan on 2021/12/21.

@@ -1,4 +1,4 @@
-package sort;
+package day01.sort2;
 
 import java.util.Arrays;
 
