@@ -14,7 +14,7 @@ public class GetMinStack<T extends Integer> {
 
 
     public void push(T t){
-        if( minStack.isEmpty()){
+        if(minStack.isEmpty()){
             minStack.push(t);
         }else {
            T minValue = getMinValue();
