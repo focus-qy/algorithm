@@ -1,23 +1,37 @@
+import java.util.HashMap;
 public class Test {
-
-    public static void main(String[] args) {
-//        String s = "abc";
-//        String s1 =  new String("abc");
-//        List<String> list = Arrays.asList(new String[]{});
-//        String s2 = list.remove(0);
-        System.out.println("-------------");
-        test();
+    static class T{
+       public String name;
     }
+    public static void main(String[] args) throws ClassNotFoundException {
+//        String s = "abcbcw";
+//        HashMap<Character, Integer> map = new HashMap<>();
+//        char[] chars = s.toCharArray();
+//        for (int i = 0; i < chars.length; i++) {
+//            Character c = chars[i];
+//            Integer num = map.get(c);
+//            map.put(c, num == null ? 1 : ++num);
+//        }
+//
+//
+//        map.forEach((key,value)->{
+//            System.out.println(key + "-----" + value);
+//        });
+//
+//
+//
+//        for (int i = 0; i < chars.length; i++) {
+//            Integer num = map.get(chars[i]);
+//            if (num == 1) {
+//                System.out.println(chars[i]);
+//                return;
+//            }
+//        }
 
-    volatile int aa = 6;
-    private static void test(){
-         int a = 6;
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println(a);
-            }
-        }).start();
+        T t = new T();
+        t.name = "123";
+
+
+
     }
-
 }
